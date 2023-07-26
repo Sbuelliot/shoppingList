@@ -1,4 +1,4 @@
-html {
+body {
     background-color: rgb(179, 94, 94);
     font-family: 'Franklin Gothic Medium';
 }
@@ -18,12 +18,13 @@ li.checked {
 }
   
 button {
+  align-items: center;
   min-height: 50px;
   width: 60px;
   border-radius: 50%;
   border-color: black;
   background-color: #0c69b6;
-  color: #fff;
+  color: #9b9292;
   font-size: 15px;
   padding-bottom: 5px;
   border-width: 0;
@@ -34,8 +35,17 @@ input[type="text"] {
   height: 40px;
   top: 10px;
   border: #3303a3;
-  background-color: rgb(145, 78, 52);
+  background-color: rgb(184, 102, 69);
   font-size: 20px;
   font-weight: 100;
   width: 200px;
+}
+
+footer {
+  background-color: rgb(231, 122, 122);
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
 }

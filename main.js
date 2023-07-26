@@ -109,3 +109,25 @@ for (let i = 0; i < closeButtons.length; i++) {
     });
 }
 }
+// Get the HTML elements by the ID
+const dateTimeElement = document.getElementById("date-time");
+// Define a function to display the current date and time
+function displayDateTime() {
+    // Create a new Date object
+    const currentDate = new Date();
+    // Get the date and time components
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth() + 1; // Months are zero-based
+    const day = currentDate.getDate();
+    const hour = currentDate.getHours();
+    const minute = currentDate.getMinutes();
+    const second = currentDate.getSeconds();
+    // Format the date and time as YYYY-MM-DD HH:MM:SS
+    const dateTime = `${year}-${month}-${day} ${hour}:${minute}:${second}`;
+    // Set the text content of the date-time element
+    dateTimeElement.textContent = dateTime;
+}
+// Call the displayDateTime function when the page loads
+displayDateTime();
+// Call the displayDateTime function every second using setInterval
+setInterval(displayDateTime, 1000);
